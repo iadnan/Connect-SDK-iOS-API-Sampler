@@ -291,10 +291,6 @@
 #pragma mark - Connect SDK API sampler methods
 
 - (IBAction)displayPhoto:(id)sender {
-    if (_launchSession) {
-        [_launchSession closeWithSuccess:nil failure:nil];
-        _launchSession = nil;
-    }
 
     [self resetMediaControlComponents];
     
@@ -323,10 +319,6 @@
 }
 
 - (IBAction)displayVideo:(id)sender {
-    if (_launchSession) {
-        [_launchSession closeWithSuccess:nil failure:nil];
-        _launchSession = nil;
-    }
 
     [self resetMediaControlComponents];
 
@@ -359,10 +351,6 @@
 }
 
 - (IBAction)playAudio:(id)sender {
-    if (_launchSession) {
-        [_launchSession closeWithSuccess:nil failure:nil];
-        _launchSession = nil;
-    }
     
     [self resetMediaControlComponents];
 
